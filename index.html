@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en" class="no-js" data-theme="sky">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +7,7 @@
   <meta name="description" content="Portfolio of Palani Raj, a BCA graduate and Python Full Stack Developer trained at Besant Technologies. See projects built with HTML, CSS, JavaScript and Python.">
   <meta name="keywords" content="Palani Raj, Python Full Stack Developer, fresher, BCA, HTML5, CSS3, JavaScript, Python, SQL, portfolio, Besant Technologies, Chennai">
   <meta name="author" content="Palani Raj">
-  <meta name="theme-color" content="#0B1220">
+  <meta name="theme-color" content="#F6F9FF">
   <!-- Update the URL below once your site is live (for GitHub Pages: https://<username>.github.io/<repo>/) -->
   <link rel="canonical" href="https://palaniraj21.github.io/">
 
@@ -20,6 +20,7 @@
   <meta name="twitter:title" content="PALANI RAJ | Python Full Stack Developer">
   <meta name="twitter:description" content="Building modern, responsive and user-friendly web experiences.">
 
+  <script>try{var t=localStorage.getItem("pr-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -376,8 +377,20 @@
     </div>
   </footer>
 
+  <div class="themer" id="themer">
+    <div class="themer__panel glass" id="themerPanel" role="group" aria-label="Colour theme" hidden>
+      <button type="button" data-theme-set="sky" aria-pressed="true"><i style="--a:#2373F4;--b:#F2F7A0"></i>Blue, sky and yellow</button>
+      <button type="button" data-theme-set="pastel" aria-pressed="false"><i style="--a:#F19ED2;--b:#91DDCF"></i>Mint, lilac and pink</button>
+      <button type="button" data-theme-set="ember" aria-pressed="false"><i style="--a:#F59E0B;--b:#0B1220"></i>Navy and orange</button>
+      <button type="button" data-theme-set="emerald" aria-pressed="false"><i style="--a:#34D399;--b:#07130F"></i>Forest and mint</button>
+      <button type="button" data-theme-set="violet" aria-pressed="false"><i style="--a:#A78BFA;--b:#0E0B1A"></i>Ink and violet</button>
+      <button type="button" data-theme-set="rose" aria-pressed="false"><i style="--a:#FB7185;--b:#130E12"></i>Plum and coral</button>
+    </div>
+    <button class="themer__btn glass" id="themerBtn" type="button" aria-expanded="false" aria-controls="themerPanel"><span class="themer__swatch" aria-hidden="true"></span>Colours</button>
+  </div>
+
   <button class="to-top" id="toTop" type="button" aria-label="Back to top"><svg class="ico"><use href="#i-down"/></svg></button>
 
-  <script src="main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
